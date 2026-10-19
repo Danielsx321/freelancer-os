@@ -38,7 +38,7 @@ Each message in its own fenced code block, with its character count beside it (c
 ## Example (invented client, invented job)
 
 ```
-Pre-delivery (412 chars)
+Pre-delivery (322 chars)
 
 Hi Dana,
 
@@ -50,7 +50,7 @@ Submitting the milestone now with a short report attached.
 ```
 
 ```
-Post-delivery (388 chars)
+Post-delivery (263 chars)
 
 Hi Dana,
 
