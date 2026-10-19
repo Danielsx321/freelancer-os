@@ -74,7 +74,7 @@ Explain in one line what each one unlocks, then let them choose:
 - **Gmail connector** (Claude app, Settings → Connectors). With it, cold emails land as drafts in their inbox. Without it, the email shows in chat for them to paste. Check whether it's connected by calling the Gmail tool to list drafts; if it's missing, say how to connect it and carry on.
 - **PageSpeed Insights API key** (free from Google's console; needed for the Maps and SEO lanes). Give the sign-up page first on its own; when they confirm they're in, the key page. They paste it into `.env` as `PAGESPEED_API_KEY=`. Test: `python3 -c "import config; print(bool(config.get_key('PAGESPEED_API_KEY')))"` from `scripts/`.
 - **Apify token** (free tier; needed for the Maps and SEO lanes). Same pattern, `APIFY_API_TOKEN=`.
-- **Upwork connector** (Claude app) for pulling job links and the job-scout lane. Check with `list_accounts`; if it's missing, say how to connect it.
+- **Upwork connector** (Claude app) for pulling job links, the job-scout lane, and the two scheduled routines (auto-apply drafts proposals for fresh posts, auto-reply drafts answers to unopened rooms; neither submits or sends on its own). Check with `list_accounts`; if it's missing, say how to connect it. If it's there, ask whether they want either routine; on a yes, fill its block in `config.yml` (account name from `list_accounts`, cadence, the Connects floor and rates for auto-apply, the never-rooms for auto-reply) and say the scheduling line to use later ("schedule the auto-apply routine every 20 minutes").
 
 Skip anything they don't want; a skipped lane stays off in `config.yml`. Mark the step `skipped` if nothing was added.
 
@@ -102,6 +102,8 @@ Three short paragraphs, one per skill, each ending with the phrase that triggers
 - **Outreach.** Paste a job post and you get the research, a cold email in your voice and a lead file. "Follow up time" tells you who's due. Say: paste any job post.
 - **Client delivery.** Paste a client message and the reply comes first. Say "milestone done" and the delivery kit arrives: two messages, a Word report, the ask for the next one. Say: paste a client message.
 - **Proposals.** Paste a post you want to bid on and you get a letter with your proof woven in, a price with the reasoning, and the screening answers ready to paste. Say: "write a proposal for this".
+
+If a routine was switched on in Step 2, one more paragraph: **Auto-apply / auto-reply** run on a timer, draft only, and wait for "submit the drafts" or "send the drafts". Say: "schedule the auto-apply routine every 20 minutes".
 
 Then: "Nothing sends or submits without your word."
 

@@ -1,6 +1,6 @@
 # Freelancer OS
 
-A Claude Code add-on pack for solo freelancers. It finds work, writes the cold email, wins the proposal, delivers the job and keeps the client. Three skills, one setup command, and the scripts behind them. You talk, Claude runs the process.
+A Claude Code add-on pack for solo freelancers. It finds work, writes the cold email, wins the proposal, delivers the job and keeps the client. Five skills, one setup command, and the scripts behind them. You talk, Claude runs the process.
 
 ## Who this is for
 
@@ -27,6 +27,10 @@ Either way, nothing sends an email or submits a proposal without your word.
 
 **Client delivery.** Paste a client message and the reply comes first, before any work starts. When a milestone is done, Claude hands over the delivery kit unasked: the pre-delivery message, the delivery message, a Word report, and the post-delivery message that asks for the next milestone. Every client gets an `upsells.md` and a `future-work.md` that fill up silently as the conversation goes. When a job wraps up, one open question asks what else they need. When a contract has run its course, the close message leaves the door open without a pitch.
 
+**Auto-apply (optional, scheduled).** Every 20 minutes, Claude finds the fresh posts on your own Upwork account that fit your lanes, writes a full proposal for each by the proposals rules, notes the Connects cost, and saves them. Nothing is submitted until you say "submit the drafts". A Connects floor stops it when the balance can't carry the next one.
+
+**Auto-reply (optional, scheduled).** Every 20 minutes, Claude reads the Upwork rooms you haven't opened and drafts a reply to each waiting client message from the thread and the client folder. Anything that needs a decision gets a holding draft and a line in a needs-you file. Nothing is sent until you say "send the drafts".
+
 **Proposals.** Paste a post you want to bid on. Claude opens the client's site, names one real fault, writes a letter under 5,000 characters with at least three proof links woven into the points they back, prices against the real scope (including the case where the posted budget is a placeholder), formats the screening answers so they paste cleanly, and waits for your approval.
 
 ## What it needs
@@ -36,7 +40,7 @@ Either way, nothing sends an email or submits a proposal without your word.
 - Optional: the Gmail connector in the Claude app, so cold emails land as drafts in your inbox. Without it, the email shows in chat for you to paste.
 - Optional: a free Google PageSpeed Insights API key and a free Apify account, for the Maps and SEO lanes.
 - Optional: Node.js with `npm install`, for Word reports (`scripts/md2docx.js`).
-- Optional: the Upwork connector, for pulling job links and the job-scout lane.
+- Optional: the Upwork connector, for pulling job links, the job-scout lane, auto-apply and auto-reply.
 
 ## Built on
 

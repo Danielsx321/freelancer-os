@@ -36,3 +36,31 @@ runs_dir: runs
 # a value here is used only when .env has none.
 pagespeed_api_key:
 apify_api_token:
+
+# Auto-apply: a scheduled routine that writes a full proposal for every fitting fresh
+# post on your own Upwork account (needs the Upwork connector) and saves it for you
+# to submit. It never submits on its own.
+auto_apply:
+  enabled: off
+  account_name: Your Name
+  every_minutes: 20
+  connects_floor: 60     # never let a proposal take the balance below this
+  boost_cap: 12          # most Connects added as a boost on one proposal
+  hourly_rate: 35
+  hourly_min: 15
+  fixed_min: 100
+  max_per_run: 10
+  lanes: WordPress, WooCommerce, website speed, website build
+  never: Shopify, Webflow, mobile apps, voice calls, video recordings
+  blocked_clients:
+
+# Auto-reply: a scheduled routine that drafts a reply to every client message in rooms
+# you have not opened yet (needs the Upwork connector) and queues it for you to send.
+# It never sends on its own.
+auto_reply:
+  enabled: off
+  account_name: Your Name
+  every_minutes: 20
+  unread_only: on
+  max_age_days: 7
+  never_rooms:
