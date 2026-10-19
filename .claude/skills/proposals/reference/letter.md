@@ -17,7 +17,7 @@ Short paragraphs of one to three sentences, a blank line between each. No headin
 **6. Sign-off.** One easy, fast-to-answer question tied to the outcome the buyer wants from the job (no time or day in it), then exactly three lines:
 
 ```
-<a title written for this job, e.g. "WordPress Security & Malware Removal Specialist">
+<a title written for this job, e.g. "Website Security Specialist" or "Product Launch Copywriter">
 <portfolio_url>
 <sender_name>
 ```
@@ -68,7 +68,7 @@ $450 fixed, in two milestones: $150 for the measurement and image work, $300 for
 
 Would you rather I start with the booking page or the homepage?
 
-WordPress Performance Specialist
+Website Performance Specialist
 https://your-portfolio.example
 Sam Carter
 ```

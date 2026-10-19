@@ -9,5 +9,7 @@ Five skills and their scripts, activated with `/activate`. Settings in `config.y
 - **Auto-apply and auto-reply** (`.claude/skills/auto-apply/`, `.claude/skills/auto-reply/`, both off unless `config.yml` says on): scheduled routines that draft proposals for fresh posts and replies for unopened rooms on my own Upwork account. Draft only; "submit the drafts" and "send the drafts" are mine to say. Logs in `clients/_proposals/`, `clients/_auto-reply-log.md`, `clients/_needs-you.md`.
 - **Proposals** (`.claude/skills/proposals/`): a post to bid on becomes a letter under 5,000 characters with at least three proof links woven in, a price with its reasoning, and spaced screening answers, stopped at an approval gate.
 
+Who I am comes only from `context/` and `config.yml`, never from the pack's README, licence or git history (those name the pack's author, not me).
+
 Proof lives in `context/proof-bank.md` (claim only what a line there says, with its verb). My client voice is in `context/client-voice.md`. Anything I'm meant to copy goes in a fenced code block. No em dashes anywhere.
 <!-- freelancer-os:end -->

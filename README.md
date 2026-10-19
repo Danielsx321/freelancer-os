@@ -4,7 +4,9 @@ A Claude Code add-on pack for solo freelancers. It finds work, writes the cold e
 
 ## Who this is for
 
-One person selling their own work: web, copy, design, video, consulting, anything where you find clients, pitch them, deliver and get paid. It was built in a working web freelance practice and the web-specific parts (slow-site checks, local SEO audits) are switches you can leave off.
+One person selling their own work: web, copy, design, video, consulting, anything where you find clients, pitch them, deliver and get paid. The web-specific parts (slow-site checks, local SEO audits) are switches you can leave off.
+
+The pack ships empty. It knows nothing about you, your services or your clients until `/activate` asks, and everything it writes about you comes from your answers. The names in the examples (Sam Carter, Oak Ridge Fence) are made up.
 
 ## Two ways to install
 
@@ -44,11 +46,7 @@ Either way, nothing sends an email or submits a proposal without your word.
 
 ## Built on
 
-This pack sits on top of Liam Ottley's AI Makeover workspace template (youtube.com/@LiamOttley). His template is not included here; get it from the video above. Everything in this repo was written for a working freelance practice and generalised so you can run it on yours.
-
-## By
-
-Daniel Dada, Dada Daniels. Web designer and developer, Top Rated on Upwork, building sites, web apps and event tech, and the AI systems that run the business around them. https://dadadaniels.vercel.app
+This pack sits on top of Liam Ottley's AI Makeover workspace template (youtube.com/@LiamOttley). His template is not included here; get it from the video above.
 
 ## Licence
 

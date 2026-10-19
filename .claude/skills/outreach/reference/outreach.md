@@ -51,7 +51,7 @@ Both fit inside the length limit; cut elsewhere if needed.
 ```
 Best regards,
 <sender_name>
-<a title that matches this job, e.g. "WordPress Developer & Elementor Expert" or "B2B Email Copywriter">
+<a title that matches this job, e.g. "Brand Identity Designer" or "B2B Email Copywriter">
 <portfolio_url, or the case-study page that matches the proof if you have one>
 ```
 
@@ -111,7 +111,7 @@ I noted two other things holding the site back. Shall I send them over?
 
 Best regards,
 Sam Carter
-Local SEO & WordPress Specialist
+Local SEO Specialist
 https://samcarter.example
 ```
 

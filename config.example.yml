@@ -46,12 +46,12 @@ auto_apply:
   every_minutes: 20
   connects_floor: 60     # never let a proposal take the balance below this
   boost_cap: 12          # most Connects added as a boost on one proposal
-  hourly_rate: 35
-  hourly_min: 15
-  fixed_min: 100
+  hourly_rate:           # your hourly rate, set by /activate
+  hourly_min:            # skip hourly posts paying below this
+  fixed_min:             # skip fixed posts below this
   max_per_run: 10
-  lanes: WordPress, WooCommerce, website speed, website build
-  never: Shopify, Webflow, mobile apps, voice calls, video recordings
+  lanes:                 # the kinds of job you bid on, comma separated
+  never:                 # tools, platforms or asks you never take on
   blocked_clients:
 
 # Auto-reply: a scheduled routine that drafts a reply to every client message in rooms

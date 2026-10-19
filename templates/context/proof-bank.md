@@ -11,7 +11,7 @@
 
 | Site | What to say | Best proof for | Detail |
 |---|---|---|---|
-| https://example-client.com | Built it: five-page WordPress site with online booking | Small business sites, booking | (case-study page or notes, optional) |
+| https://example-client.com | Built it: five-page site with online booking | Small business sites, booking | (case-study page or notes, optional) |
 
 ## Fixes and results
 

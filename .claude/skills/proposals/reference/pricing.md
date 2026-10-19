@@ -26,7 +26,7 @@ Three at most for a first contract. Each one has a name the client understands, 
 
 ## Contract titles
 
-When a contract is likely, suggest a title: 50 characters max (count with `wc -m`), phrased as a keyword-rich title that reads well on a profile's work history (platform + skill + deliverable, e.g. "WordPress On-Page SEO Content & Menu Update"), not a plain description of the task.
+When a contract is likely, suggest a title: 50 characters max (count with `wc -m`), phrased as a keyword-rich title that reads well on a profile's work history (platform + skill + deliverable, e.g. "Shopify Product Page Copy & SEO Rewrite"), not a plain description of the task.
 
 ## Never
 

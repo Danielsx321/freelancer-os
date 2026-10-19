@@ -12,6 +12,7 @@ args: $ARGUMENTS (usually empty)
 
 ## FOR CLAUDE, how to run this
 
+- **The user is whoever answers these questions, never the pack's author.** The name in `LICENSE` and the git history belongs to the person who wrote the pack; ignore it. Every fact about the user (name, services, lanes, proof, voice, location) comes from their answers or the files they wrote in `context/`. Never fill a gap from the README, the licence, the commit log or the examples, and never assume a shared first name means the same person.
 - Assume a smart person who may never have used Claude Code. No jargon without a plain-English translation in the same sentence.
 - The pattern for every step: explain → confirm → act → verify → stop.
 - No error dumps, ever. Name the problem simply, fix it together, or park it without blocking the rest.
@@ -48,7 +49,7 @@ Look, don't ask:
 - Does `config.yml` exist already? Read it; those answers are done.
 - Is `python3` available (`python3 --version`)? Is `requests` installed (`python3 -c "import requests"`)? If not, offer `pip3 install -r requirements.txt` and run it on their yes. Is `node` available? Only needed for Word reports; note it and move on.
 
-Write `.activate-state` with mode and name (ask the name if standalone and nothing on disk gives it).
+Write `.activate-state` with mode and name (in standalone mode always ask the name; in template mode take it from `context/you.md` or `.seat` only).
 
 ---
 
@@ -56,7 +57,7 @@ Write `.activate-state` with mode and name (ask the name if standalone and nothi
 
 Only what's missing. In template mode most of this comes from `context/`; confirm it in one line each rather than re-asking.
 
-1. **What you sell, in one line.** ("WordPress sites and fixes for small businesses", "B2B email copy".) Goes in `config.yml` as `business_one_line` and, standalone, into `context/offer.md`.
+1. **What you sell, in one line.** ("Brand identity for independent cafes", "B2B email copy", "Website fixes for small businesses".) Goes in `config.yml` as `business_one_line` and, standalone, into `context/offer.md`.
 2. **Who buys it.** Two or three kinds of client, with the problem each one has when they come looking.
 3. **Where work comes from.** Job boards (which), Google Maps businesses, referrals, LinkedIn. This decides the lanes in Step 3.
 4. **Proof.** Three to six links to work they can put their name to, with one line each on what they did and any number that came out of it (load time, enquiries, revenue, whatever they measured). Verb matters: built, fixed, sped up, worked on. If they have fewer than three, that's fine; the pack works with what's there and the proof bank grows as jobs ship.

@@ -16,6 +16,8 @@ If `<runs_dir>/auto-apply-STOPPED.md` exists, do nothing, reply "Auto-apply stop
 Load the Upwork connector tools (`find_jobs`, `list_accounts`, `get_profile`, `list_freelancer_proposals`). Run `list_accounts`: the freelancer account must match `auto_apply.account_name` in config. If it doesn't, write nothing, report the mismatch, stop.
 
 ## 3. Find posts
+If `auto_apply.lanes`, `hourly_rate`, `hourly_min` or `fixed_min` is empty in `config.yml`, draft nothing and end with "Auto-apply isn't set up yet: run /activate to fill your lanes and rates."
+
 `find_jobs smart_search`, most recent, posted in the last day (page while results stay fresh), plus `find_jobs search` sorted by recency for each lane term in `auto_apply.lanes`. Keep only posts that pass ALL of:
 - published in the last 24 hours, not applied, proposals tier under 50, nobody hired or offered yet (`find_jobs get`, job activity)
 - squarely in a lane from `auto_apply.lanes`
