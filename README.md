@@ -12,7 +12,7 @@ One person selling their own work: web, copy, design, video, consulting, anythin
 
 1. Watch the video: https://youtu.be/ulJqlCPNGKI
 2. Download his template and run `/install` the way the video shows.
-3. Download this repo and copy `.claude/`, `scripts/`, `templates/`, `config.example.yml`, `requirements.txt` and `package.json` into your workspace folder. Existing folders merge; nothing of his is overwritten.
+3. Download this repo and copy `.claude/`, `scripts/`, `templates/`, `config.example.yml` and `package.json` into your workspace folder. Existing folders merge; none of his files are overwritten (the pack's skills and command have their own names). Don't copy this repo's `.gitignore` or `requirements.txt` over his; `/activate` adds the ignore lines it needs, and the two Python packages (`requests`, `python-dotenv`) are already in his template.
 4. Open the workspace in Claude Code and type `/activate`.
 
 `/activate` reads what `/install` already learned about your business and only asks what is missing.
