@@ -1,0 +1,38 @@
+# Freelancer OS settings. Copy this file to config.yml and fill it in,
+# or let /activate do it for you. Flat key: value lines; the lanes block
+# is the one nested section.
+
+# Who the messages come from
+sender_name: Your Name
+sender_email: you@example.com
+portfolio_url: https://your-site.com
+business_one_line: Freelance copywriter for small B2B companies
+
+# Optional: a one-page resume to attach to cold emails (path relative to this folder)
+resume_path:
+
+# Which outreach lanes are switched on. Off lanes refuse to run.
+lanes:
+  job_post: on       # paste a job post, get a researched cold email
+  job_scout: off     # Claude finds fresh job posts itself (needs the Upwork connector)
+  maps_scout: off    # slow-website lane, one niche in one city (needs Apify + PageSpeed keys)
+  seo_scout: off     # not-ranking lane, one niche in one city (needs Apify + PageSpeed keys)
+
+# Sending limits for cold email from a personal inbox
+daily_send_cap: 20
+per_15_min_cap: 5
+
+# A drafted email older than this is deleted, never sent
+stale_days_job_post: 3
+stale_days_maps: 7
+stale_days_seo: 7
+
+# Where things live (relative to this folder)
+leads_dir: leads
+clients_dir: clients
+runs_dir: runs
+
+# Keys. Prefer putting these in .env as PAGESPEED_API_KEY and APIFY_API_TOKEN;
+# a value here is used only when .env has none.
+pagespeed_api_key:
+apify_api_token:

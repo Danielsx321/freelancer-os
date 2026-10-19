@@ -1,0 +1,22 @@
+# Your own settings and keys. Never committed.
+config.yml
+.env
+.activate-state
+
+# Your leads, clients and run data. This machine only.
+/private/
+/leads/
+/clients/
+/runs/
+/context/
+
+# The leak-scan term list names the things it hides, so it stays local.
+scripts/leak_terms.txt
+
+# Local noise
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.DS_Store
+*.docx
